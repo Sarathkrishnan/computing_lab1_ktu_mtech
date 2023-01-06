@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import csv 
 from pgmpy.estimators import MaximumLikelihoodEstimator
-from pgmpy.models import BayesianModel
+from pgmpy.models import BayesianNetwork
 from pgmpy.inference import VariableElimination
 
 heartDisease = pd.read_csv('heart.csv')
@@ -14,7 +14,7 @@ print(heartDisease.head())
 print('\n Attributes and datatypes')
 print(heartDisease.dtypes)
 
-model= BayesianModel([('age','heartdisease'),('sex','heartdisease'),('exang','heartdisease'),('cp','heartdisease'),('heartdisease','restecg'),('heartdisease','chol')])
+model= BayesianNetwork([('age','heartdisease'),('sex','heartdisease'),('exang','heartdisease'),('cp','heartdisease'),('heartdisease','restecg'),('heartdisease','chol')])
 print('\nLearning CPD using Maximum likelihood estimators')
 model.fit(heartDisease,estimator=MaximumLikelihoodEstimator)
 

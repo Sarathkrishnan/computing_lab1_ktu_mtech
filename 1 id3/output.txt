@@ -1,0 +1,20 @@
+The decision tree for the dataset using ID3 algorithm is
+ Outlook
+   overcast
+     yes
+   rain
+     Wind
+       weak
+         yes
+       strong
+         no
+   sunny
+     Humidity
+       normal
+         yes
+       high
+         no
+The test instance: ['rain', 'cool', 'normal', 'strong']
+The label for test instance:   no
+The test instance: ['sunny', 'mild', 'normal', 'strong']
+The label for test instance:   yes

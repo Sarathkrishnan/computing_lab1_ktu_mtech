@@ -1,0 +1,8 @@
+The accuracy score of K-Mean:  0.24
+The Confusion matrixof K-Mean:  [[ 0 50  0]
+ [48  0  2]
+ [14  0 36]]
+The accuracy score of EM:  0.36666666666666664
+The Confusion matrix of EM:  [[50  0  0]
+ [ 0  5 45]
+ [ 0 50  0]]

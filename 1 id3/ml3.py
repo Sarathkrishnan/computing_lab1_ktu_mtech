@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Aug 31 09:50:39 2018
-
-@author: Deepak.D
-"""
 import math
 import csv
 def load_csv(filename):
